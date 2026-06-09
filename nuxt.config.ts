@@ -1,0 +1,206 @@
+// nuxt.config.ts
+import { defineNuxtConfig } from 'nuxt/config'
+
+const ignoredDevWatchPaths = [
+  '**/.claude/**',
+  '**/.git/**',
+  '**/.nuxt/**',
+  '**/.output/**',
+  '**/.playwright-mcp/**',
+  '**/test-results/**',
+]
+
+export default defineNuxtConfig({
+  ignore: ignoredDevWatchPaths,
+
+  modules: ['@pinia/nuxt', '@vite-pwa/nuxt', '@nuxtjs/i18n', '@nuxt/eslint'],
+
+  ssr: false,
+  devtools: { enabled: true },
+
+  app: {
+    head: {
+      script: process.env.COOKIEYES_CLIENT_ID
+        ? [
+            {
+              src: `https://cdn-cookieyes.com/client_data/${process.env.COOKIEYES_CLIENT_ID}/script.js`,
+              async: true,
+            },
+          ]
+        : [],
+    },
+  },
+  css: ['~/assets/css/main.css'],
+
+  runtimeConfig: {
+    public: {
+      datadogApplicationId: process.env.DATADOG_APPLICATION_ID || '',
+      datadogClientToken: process.env.DATADOG_CLIENT_TOKEN || '',
+      datadogEnv: process.env.NODE_ENV || 'production',
+      cookieyesClientId: process.env.COOKIEYES_CLIENT_ID || '',
+    },
+  },
+
+  routeRules: {
+    // prerender index route by default
+    '/': { prerender: true },
+  },
+
+  compatibilityDate: '2024-09-03',
+
+  watchers: {
+    chokidar: {
+      ignored: ignoredDevWatchPaths,
+    },
+  },
+
+  vite: {
+    plugins: [],
+    server: {
+      watch: {
+        ignored: ignoredDevWatchPaths,
+      },
+      hmr: {
+        overlay: true, // Enable HMR overlay for errors
+      },
+      proxy: {
+        '^/api/.*': {
+          target: 'https://api.meshtastic.org/',
+          changeOrigin: true,
+          followRedirects: true,
+          rewrite: path => path.replace(/^\/api/, ''),
+          secure: false,
+          headers: {
+            Accept: 'application/octet-stream',
+            Origin: 'https://flash.meshtastic.org',
+            Referer: 'https://flash.meshtastic.org/',
+          },
+        },
+      },
+    },
+  },
+
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+  eslint: {
+    config: {
+      stylistic: true,
+      typescript: true,
+    },
+  },
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        file: 'en.json',
+      },
+      {
+        code: 'bg',
+        name: 'Български',
+        file: 'bg.json',
+      },
+      {
+        code: 'cs',
+        name: 'Čeština',
+        file: 'cs.json',
+      },
+      {
+        code: 'de',
+        name: 'Deutsch',
+        file: 'de.json',
+      },
+      {
+        code: 'es',
+        name: 'Español',
+        file: 'es.json',
+      },
+      {
+        code: 'fi',
+        name: 'Suomi',
+        file: 'fi.json',
+      },
+      {
+        code: 'fr',
+        name: 'Français',
+        file: 'fr.json',
+      },
+      {
+        code: 'it',
+        name: 'Italiano',
+        file: 'it.json',
+      },
+      {
+        code: 'ja',
+        name: '日本語',
+        file: 'ja.json',
+      },
+      {
+        code: 'nl',
+        name: 'Nederlands',
+        file: 'nl.json',
+      },
+      {
+        code: 'pt',
+        name: 'Português',
+        file: 'pt.json',
+      },
+      {
+        code: 'pl',
+        name: 'Polski',
+        file: 'pl.json',
+      },
+      {
+        code: 'ru',
+        name: 'Русский',
+        file: 'ru.json',
+      },
+      {
+        code: 'sv',
+        name: 'Svenska',
+        file: 'sv.json',
+      },
+      {
+        code: 'uk',
+        name: 'Українська',
+        file: 'uk.json',
+      },
+      {
+        code: 'tr',
+        name: 'Türkçe',
+        file: 'tr.json',
+      },
+      {
+        code: 'zh-Hans',
+        name: '简体中文',
+        file: 'zh-Hans.json',
+      },
+      {
+        code: 'zh-Hant',
+        name: '繁體中文',
+        file: 'zh-Hant.json',
+      },
+    ],
+    defaultLocale: 'en',
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'no_prefix',
+    vueI18n: '../i18n.config.ts',
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_lang',
+      redirectOn: 'root',
+    },
+  },
+
+  pwa: {
+    /* PWA options */
+  },
+})

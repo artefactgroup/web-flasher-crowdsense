@@ -1,0 +1,21 @@
+{
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "typeAcquisition": {
+    "enable": true
+    // "include": [
+    //   "@meshtastic/core",
+    //   "@meshtastic/transport-web-serial",
+    //   "@pinia/nuxt",
+    //   "@zip.js/zip.js",
+    //   "esptool-js",
+    // ]
+  },
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "types": [
+      "@pinia/nuxt",
+      "@zip.js/zip.js",
+      "esptool-js"
+    ]
+  }
+}
