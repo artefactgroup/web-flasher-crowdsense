@@ -14,13 +14,13 @@ export default {
     extend: {
       colors: {
         meshtastic: {
-          DEFAULT: '#67EA94',
+          DEFAULT: '#58A6FF',
           50: '#E8FCF0',
           100: '#D1F9E1',
           200: '#A3F3C3',
-          300: '#67EA94',
+          300: '#58A6FF',
           400: '#3DE07A',
-          500: '#22C55E',
+          500: '#3B82F6',
           600: '#1A9B4A',
           700: '#137136',
           800: '#0C4722',
