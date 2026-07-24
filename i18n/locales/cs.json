@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher",
+  "title": "CrowdSense Flasher",
   "header": "Flasher",
   "description": "Webový nástroj pro flashování firmwaru ESP32",
   "browser_warning": "Váš prohlížeč nepodporuje WebSerial API. Pro plnou funkčnost přepněte do kompatibilního prohlížeče, jako je Chrome nebo Edge.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Jazyk",
   "actions": {
     "connect": "Připojit",
@@ -29,7 +29,7 @@
     "select_device": "Vybrat cílové zařízení",
     "all_devices": "Všechny zařízení",
     "instructions": "Připojte zařízení přes USB. Ujistěte se, že kabel není pouze napájecí.",
-    "subheading": "Pokud je již připojené zařízení Meshtastic nainstalováno, můžete ho automaticky detekovat:",
+    "subheading": "Pokud je již připojené zařízení nainstalováno, můžete ho automaticky detekovat:",
     "auto_detect": "Automaticky detekovat",
     "supported_devices": "Podporované zařízení",
     "diy_devices": "DIY zařízení"
@@ -94,7 +94,7 @@
       "download_uf2": "Stáhnout UF2"
     },
     "erase_uf2": {
-      "warning": "Po vymazání flash paměti nebude tato operace znovu dostupná, dokud nebude do zařízení nahrán nový firmware Meshtastic.",
+      "warning": "Po vymazání flash paměti nebude tato operace znovu dostupná, dokud nebude do zařízení nahrán nový firmware.",
       "dfu_warning": "Tato operace zcela vymaže vaše zařízení.",
       "wait_for_drive": "Počkejte, až disk zmizí, a poté otevřete sériový monitor, aby se proces mazání dokončil.",
       "close_instructions": "Zavřete toto vyskakovací okno, vyberte verzi firmwaru a spusťte flashování."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Otevřít Serial Monitor",
-    "meshtastic_docs": "Meshtastic dokumentace",
+    "meshtastic_docs": "Dokumentace",
     "contribute": "Přispět na GitHubu"
   },
   "serial": {

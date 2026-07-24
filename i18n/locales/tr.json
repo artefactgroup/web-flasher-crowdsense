@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Yazılım Yükleyicisi",
+  "title": "CrowdSense Web Yazılım Yükleyicisi",
   "header": "Yazılım Yükleyicisi",
   "description": "ESP32 yazılımı yüklemek için web tabanlı bir araç",
   "browser_warning": "Tarayıcınız WebSerial API'sını desteklemiyor. Lütfen Chrome veya Edge gibi uyumlu bir tarayıcıya kullanın.",
-  "header_title": "YAZILIM YÜKLEYİCİSİ",
+  "header_title": "CrowdSense YAZILIM YÜKLEYİCİSİ",
   "language": "Dil",
   "actions": {
     "connect": "Bağlan",
@@ -29,7 +29,7 @@
     "select_device": "Hedef Cihazı Seçin",
     "all_devices": "Tüm Cihazlar",
     "instructions": "Cihazınızı USB ile bağlayın. Kablonun yalnızca güç ileten bir kablo olmadığından emin olun.",
-    "subheading": "Bağlı cihazınızda hali hazırda Meshtastic yüklüyse, otomatik olarak tespit edebilirsiniz:",
+    "subheading": "Bağlı cihazınızda hali hazırda yazılım yüklüyse, otomatik olarak tespit edebilirsiniz:",
     "auto_detect": "Otomatik Tespit",
     "supported_devices": "Desteklenen Cihazlar",
     "diy_devices": "Kendi Yapımınız Cihazlar"
@@ -94,7 +94,7 @@
       "download_uf2": "UF2'yi İndir"
     },
     "erase_uf2": {
-      "warning": "Flash silindikten sonra, bu işlem yeni bir Meshtastic yazılımı yüklenene kadar tekrar kullanılamaz.",
+      "warning": "Flash silindikten sonra, bu işlem yeni bir yazılım yüklenene kadar tekrar kullanılamaz.",
       "dfu_warning": "Bu işlem cihazınızı tamamen silecektir.",
       "wait_for_drive": "Sürücünün kaybolmasını bekleyin, ardından silme işlemini tamamlamak için bir seri monitör açın.",
       "close_instructions": "Cihaz yaılımı sürümünü seçmek ve yüklemeye başlamak için bu pencereyi kapatın."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Seri Monitörü Aç",
-    "meshtastic_docs": "Meshtastic Belgeleri",
+    "meshtastic_docs": "Belgeler",
     "contribute": "GitHub'da Katkıda Bulun"
   },
   "serial": {

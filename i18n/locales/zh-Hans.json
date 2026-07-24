@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic 网页刷写",
+  "title": "CrowdSense 网页刷写",
   "header": "刷写",
   "description": "用于ESP32固件刷入的web工具",
   "browser_warning": "您的浏览器不支持WebSerial API。请切换到兼容的浏览器，如Chrome或Edge，获取全部功能。",
-  "header_title": "刷写器",
+  "header_title": "CrowdSense 刷写器",
   "language": "语言",
   "actions": {
     "connect": "连接",
@@ -26,7 +26,7 @@
     "select_device": "选择目标设备",
     "all_devices": "所有设备",
     "instructions": "通过 USB 插入您的设备。请确保你的USB数据线能传输数据（而非仅充电）。",
-    "subheading": "如果您所连接的设备已经安装了Meshtastic ，您可以自动检测：",
+    "subheading": "如果您所连接的设备已经安装了固件，您可以自动检测：",
     "auto_detect": "自动检测",
     "supported_devices": "支持的设备",
     "diy_devices": "DIY 设备"
@@ -91,7 +91,7 @@
       "download_uf2": "下载 UF2格式的固件"
     },
     "erase_uf2": {
-      "warning": "擦除闪存后，除非你在设备上刷入新的Meshtastic 固件，否则该选项将不再可用。",
+      "warning": "擦除闪存后，除非你在设备上刷入新的固件，否则该选项将不再可用。",
       "dfu_warning": "此操作将完全擦除您的设备。",
       "wait_for_drive": "等待驱动器“消失”，然后打开串行监视器来完成擦除过程。",
       "close_instructions": "关闭此弹出窗口以选择一个固件版本并开始刷入。"
@@ -99,7 +99,7 @@
   },
   "buttons": {
     "serial_monitor": "打开串行监视器",
-    "meshtastic_docs": "Meshtastic 文档",
+    "meshtastic_docs": "文档",
     "contribute": "在 GitHub 上贡献"
   },
   "serial": {

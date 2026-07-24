@@ -6,7 +6,7 @@
     <!-- Top toolbar -->
     <div class="relative overflow-hidden rounded-xl serial-toolbar">
       <div class="absolute inset-0 serial-toolbar-inner backdrop-blur-md" />
-      <div class="absolute inset-0 opacity-50 bg-[radial-gradient(circle_at_20%_50%,rgba(103,234,148,0.1),transparent_50%)]" />
+      <div class="absolute inset-0 opacity-50 bg-[radial-gradient(circle_at_20%_50%,rgba(88,166,255,0.1),transparent_50%)]" />
       <div class="relative flex items-center justify-between gap-6 px-4 py-3">
         <!-- Connection Status -->
         <div class="flex items-center gap-3 min-w-0">
@@ -199,7 +199,7 @@ const saveToFile = () => {
   const url = URL.createObjectURL(blob)
   const a = document.createElement('a')
   a.href = url
-  a.download = `meshtastic-log-${new Date().toISOString().replace(/:/g, '-')}.log`
+  a.download = `crowdsense-log-${new Date().toISOString().replace(/:/g, '-')}.log`
   a.click()
   URL.revokeObjectURL(url)
 }
@@ -209,8 +209,8 @@ const saveToFile = () => {
 .loader {
   width: 50px;
   height: 50px;
-  border: 4px solid rgba(103, 234, 148, 0.2);
-  border-top-color: #67EA94;
+  border: 4px solid rgba(88, 166, 255, 0.2);
+  border-top-color: #58A6FF;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }

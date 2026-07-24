@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic veebi kirjutaja",
+  "title": "CrowdSense veebi kirjutaja",
   "header": "Flasher",
   "description": "Veebipõhine vahend ESP32 seadmete püsivara laadimiseksa",
   "browser_warning": "Teie brauser ei toeta WebSerial API-t. Täieliku funktsionaalsuse tagamiseks kasuta ühilduvat brauserit, näiteks Chrome või Edge.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Keel",
   "actions": {
     "connect": "Ühenda",
@@ -29,7 +29,7 @@
     "select_device": "Vali siht seade",
     "all_devices": "Kõik seadmed",
     "instructions": "Ühenda seade USB kaabliga. Kontrolli, et kaabel ei oleks mõeldud ainult seadme laadimise jaoks.",
-    "subheading": "Kui ühendatavas seadmes on juba Meshtastic paigaldatud, võid selle automaatselt leida:",
+    "subheading": "Kui ühendatavas seadmes on juba püsivara paigaldatud, võid selle automaatselt leida:",
     "auto_detect": "Leia automaatselt",
     "supported_devices": "Toetatud seadmed",
     "diy_devices": "DIY seadmed"
@@ -94,7 +94,7 @@
       "download_uf2": "Lae UF2"
     },
     "erase_uf2": {
-      "warning": "Pärast flash kustutamist pole toimingud saadaval enne, kui seadmesse on installitud uus Meshtastic püsivara.",
+      "warning": "Pärast flash kustutamist pole toimingud saadaval enne, kui seadmesse on installitud uus püsivara.",
       "dfu_warning": "See toiming tühjendab seadme täielikult.",
       "wait_for_drive": "Oodake, kuni ketas kaob, seejärel avage jadapordi monitor kustutamisprotsessi lõpule viimiseks.",
       "close_instructions": "Sule see hüpikaken, vali püsivara versioon ja alustada programmeerimist."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Ava jadapordi monitor",
-    "meshtastic_docs": "Meshtastic dokumendid",
+    "meshtastic_docs": "Dokumendid",
     "contribute": "Osale GitHubis"
   },
   "serial": {

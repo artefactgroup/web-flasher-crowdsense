@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher",
+  "title": "CrowdSense Flasher",
   "header": "Flasher",
   "description": "Narzędzie internetowe do flashowania firmware ESP32",
   "browser_warning": "Twoja przeglądarka nie obsługuje WebSerial API. Przełącz się na zgodną przeglądarkę, taką jak Chrome lub Edge, aby uzyskać pełną funkcjonalność.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Język",
   "actions": {
     "connect": "Połącz",
@@ -29,7 +29,7 @@
     "select_device": "Wybierz urządzenie docelowe",
     "all_devices": "Wszystkie urządzenia",
     "instructions": "Podłącz urządzenie przez USB. Upewnij się, że kabel nie jest tylko do zasilania.",
-    "subheading": "Jeśli na podłączonym urządzeniu jest już zainstalowany Meshtastic, możesz go automatycznie wykryć:",
+    "subheading": "Jeśli na podłączonym urządzeniu jest już zainstalowany firmware, możesz go automatycznie wykryć:",
     "auto_detect": "Automatyczne wykrywanie",
     "supported_devices": "Obsługiwane urządzenia",
     "diy_devices": "Urządzenia DIY"
@@ -94,7 +94,7 @@
       "download_uf2": "Pobierz UF2"
     },
     "erase_uf2": {
-      "warning": "Po wymazaniu flash ta operacja nie będzie już dostępna, dopóki nowy firmware Meshtastic nie zostanie sflashowany na urządzeniu.",
+      "warning": "Po wymazaniu flash ta operacja nie będzie już dostępna, dopóki nowy firmware nie zostanie sflashowany na urządzeniu.",
       "dfu_warning": "Ta operacja całkowicie wymaże urządzenie.",
       "wait_for_drive": "Poczekaj, aż dysk zniknie, następnie otwórz monitor szeregowy, aby zakończyć proces wymazywania.",
       "close_instructions": "Zamknij to okno, aby wybrać wersję firmware i rozpocząć flashowanie."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Otwórz monitor szeregowy",
-    "meshtastic_docs": "Dokumentacja Meshtastic",
+    "meshtastic_docs": "Dokumentacja",
     "contribute": "Współtwórz na GitHub"
   },
   "serial": {

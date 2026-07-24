@@ -1,9 +1,9 @@
 {
-  "title": "Flasher Web Meshtastic",
+  "title": "Flasher Web CrowdSense",
   "header": "Flasher",
   "description": "Uma ferramenta baseada na web para instalação de firmware do ESP32",
   "browser_warning": "O seu navegador não oferece suporte à API do WebSerial. Por favor, mude para um navegador compatível, como Chrome ou Edge, para ter todas as funcionalidades.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "eset 1200bps",
   "actions": {
     "connect": "Ligar",
@@ -29,7 +29,7 @@
     "select_device": "Selecione o dispositivo destino",
     "all_devices": "Todos os dispositivos",
     "instructions": "Ligue o seu dispositivo via USB. Certifique-se de que o cabo não seja apenas um de somente energia.",
-    "subheading": "Se o seu dispositivo ligado já tem a Meshtastic instalada, pode detectá-lo automaticamente:",
+    "subheading": "Se o seu dispositivo ligado já tem firmware instalado, pode detectá-lo automaticamente:",
     "auto_detect": "Detetar Automaticamente",
     "supported_devices": "Dispositivos suportados",
     "diy_devices": "Dispositivos DIY"
@@ -94,7 +94,7 @@
       "download_uf2": "Download de UF2"
     },
     "erase_uf2": {
-      "warning": "Depois de apagar o flash, esta operação não estará disponível novamente até que o novo firmware da Meshtastic seja instalado no dispositivo.",
+      "warning": "Depois de apagar o flash, esta operação não estará disponível novamente até que o novo firmware seja instalado no dispositivo.",
       "dfu_warning": "Esta operação apagará o seu dispositivo completamente.",
       "wait_for_drive": "Espere pelo desaparecimento da unidade e, em seguida, abra um monitor de série para concluir o processo de apagamento.",
       "close_instructions": "Feche este pop-up para selecionar uma versão de firmware e começar a instalar."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Abrir Monitor de Série",
-    "meshtastic_docs": "Documentação Meshtastic",
+    "meshtastic_docs": "Documentação",
     "contribute": "Contribuir no GitHub"
   },
   "serial": {

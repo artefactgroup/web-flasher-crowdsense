@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic 網頁燒錄工具",
+  "title": "CrowdSense 網頁燒錄工具",
   "header": "燒錄工具",
   "description": "一款用於 ESP32 韌體燒錄的網頁工具",
   "browser_warning": "您的瀏覽器不支援 WebSerial API。請改用相容的瀏覽器，例如 Chrome 或 Edge，以完整使用所有功能。",
-  "header_title": "燒錄工具",
+  "header_title": "CrowdSense 燒錄工具",
   "language": "語言",
   "actions": {
     "connect": "連線",
@@ -26,7 +26,7 @@
     "select_device": "選擇目標裝置",
     "all_devices": "所有裝置",
     "instructions": "請使用 USB 將裝置接上，並確認所使用的傳輸線支援資料傳輸功能（而非僅限充電）。",
-    "subheading": "如果您連線的裝置已安裝 Meshtastic，可自動偵測：",
+    "subheading": "如果您連線的裝置已安裝韌體，可自動偵測：",
     "auto_detect": "自動偵測",
     "supported_devices": "支援的裝置",
     "diy_devices": "DIY 裝置"
@@ -91,7 +91,7 @@
       "download_uf2": "下載 UF2 檔案"
     },
     "erase_uf2": {
-      "warning": "清除快閃記憶體後，必須重新燒錄 Meshtastic 韌體才能再次使用此功能。",
+      "warning": "清除快閃記憶體後，必須重新燒錄韌體才能再次使用此功能。",
       "dfu_warning": "此操作將會完全清除您的裝置。",
       "wait_for_drive": "請等待磁碟自動卸除後，再開啟序列監控工具以完成清除程式。",
       "close_instructions": "請關閉此視窗，選擇韌體版本並開始燒錄。"
@@ -99,7 +99,7 @@
   },
   "buttons": {
     "serial_monitor": "開啟序列監控工具",
-    "meshtastic_docs": "Meshtastic 文件",
+    "meshtastic_docs": "文件",
     "contribute": "前往 GitHub 貢獻"
   },
   "serial": {

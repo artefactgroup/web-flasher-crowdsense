@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher",
+  "title": "CrowdSense Flasher",
   "header": "Flasher",
-  "description": "Ein webbasiertes Tool um Meshtastic-Firmware zu flashen",
+  "description": "Ein webbasiertes Tool um Firmware zu flashen",
   "browser_warning": "Ihr Browser unterstützt die WebSerial API nicht. Bitte wechseln Sie zu einem kompatiblen Browser wie Chrome oder Edge, um die volle Funktionalität zu erhalten.",
-  "header_title": "FLASHER",
+  "header_title": "CrowdSense FLASHER",
   "language": "Sprache",
   "actions": {
     "connect": "Verbindung herstellen",
@@ -29,7 +29,7 @@
     "select_device": "Zielgerät auswählen",
     "all_devices": "Alle Geräte",
     "instructions": "Schließen Sie Ihr Gerät über USB an. Bitte stellen Sie sicher, dass das Kabel Datenverbindungen unterstützt.",
-    "subheading": "Wenn Ihr angeschlossenes Gerät bereits Meshtastic installiert hat, können Sie die Version automatisch erkennen lassen:",
+    "subheading": "Wenn Ihr angeschlossenes Gerät bereits Firmware installiert hat, können Sie die Version automatisch erkennen lassen:",
     "auto_detect": "Automatisch erkennen",
     "supported_devices": "Unterstützte Geräte",
     "diy_devices": "Eigenbaugeräte"
@@ -94,7 +94,7 @@
       "download_uf2": "UF2 herunterladen"
     },
     "erase_uf2": {
-      "warning": "Nach dem Löschen des Speichers wird diese Operation nicht mehr verfügbar sein, bis die neue Meshtastic Firmware auf das Gerät übertragen wird.",
+      "warning": "Nach dem Löschen des Speichers wird diese Operation nicht mehr verfügbar sein, bis die neue Firmware auf das Gerät übertragen wird.",
       "dfu_warning": "Dieser Vorgang löscht Ihr Gerät vollständig.",
       "wait_for_drive": "Warten Sie, bis das Laufwerk verschwindet, dann öffnen Sie die serielle Konsole, um den Löschvorgang abzuschließen.",
       "close_instructions": "Schließen Sie dieses Popup, um eine Firmware-Version auszuwählen und mit dem Flashen zu beginnen."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Serielle Konsole öffnen",
-    "meshtastic_docs": "Meshtastic Dokumentation",
+    "meshtastic_docs": "Dokumentation",
     "contribute": "Auf GitHub mitwirken"
   },
   "serial": {

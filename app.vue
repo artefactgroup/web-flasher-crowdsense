@@ -143,11 +143,6 @@
     >
       <div class="container mx-auto px-3 sm:px-5 py-2 sm:py-4 text-center">
         <p class="text-xs sm:text-sm text-theme-muted">
-          Powered by
-          <a href="https://vercel.com/?utm_source=meshtastic&utm_campaign=oss" class="link-theme">▲ Vercel</a>
-          <span class="mx-2 text-theme-muted/50">•</span>
-          Meshtastic® is a registered trademark of Meshtastic LLC.
-          <span class="mx-2 text-theme-muted/50">•</span>
           <a href="https://meshtastic.org/docs/legal" class="link-theme">Legal Information</a>
         </p>
       </div>
@@ -368,12 +363,12 @@ onMounted(() => {
   :root {
     --bg-color: #1e1f2a;
     --text-color: #FFFFFF;
-    --primary-color: #67EA94;
-    --secondary-color: #67EA94;
+    --primary-color: #58A6FF;
+    --secondary-color: #58A6FF;
   }
   :root[data-theme="light"] {
-    --primary-color: #1A9B4A;
-    --secondary-color: #1A9B4A;
+    --primary-color: #0969DA;
+    --secondary-color: #0969DA;
   }
   body {
     font-family: 'Atkinson Hyperlegible', 'Lato', system-ui, -apple-system, sans-serif;
@@ -489,45 +484,45 @@ onMounted(() => {
 
   /* Neon glow effect on cards in konami mode */
   .konami-code .card-modern {
-    border: 1px solid rgba(103, 234, 148, 0.5) !important;
+    border: 1px solid rgba(88, 166, 255, 0.5) !important;
     box-shadow: 
-      0 0 10px rgba(103, 234, 148, 0.3),
-      0 0 20px rgba(103, 234, 148, 0.1),
-      inset 0 0 20px rgba(103, 234, 148, 0.05) !important;
+      0 0 10px rgba(88, 166, 255, 0.3),
+      0 0 20px rgba(88, 166, 255, 0.1),
+      inset 0 0 20px rgba(88, 166, 255, 0.05) !important;
     animation: neonPulse 2s ease-in-out infinite !important;
   }
 
   @keyframes neonPulse {
     0%, 100% {
       box-shadow: 
-        0 0 10px rgba(103, 234, 148, 0.3),
-        0 0 20px rgba(103, 234, 148, 0.1),
-        inset 0 0 20px rgba(103, 234, 148, 0.05);
+        0 0 10px rgba(88, 166, 255, 0.3),
+        0 0 20px rgba(88, 166, 255, 0.1),
+        inset 0 0 20px rgba(88, 166, 255, 0.05);
     }
     50% {
       box-shadow: 
-        0 0 15px rgba(103, 234, 148, 0.5),
-        0 0 30px rgba(103, 234, 148, 0.2),
-        inset 0 0 25px rgba(103, 234, 148, 0.1);
+        0 0 15px rgba(88, 166, 255, 0.5),
+        0 0 30px rgba(88, 166, 255, 0.2),
+        inset 0 0 25px rgba(88, 166, 255, 0.1);
     }
   }
 
   /* Retro pixel-style text shadow on headings */
   .konami-code h2 {
     text-shadow: 
-      2px 2px 0 rgba(103, 234, 148, 0.3),
+      2px 2px 0 rgba(88, 166, 255, 0.3),
       -1px -1px 0 rgba(0, 0, 0, 0.5) !important;
   }
 
   /* Glowing buttons in konami mode */
   .konami-code .btn-primary,
   .konami-code .btn-secondary {
-    box-shadow: 0 0 10px rgba(103, 234, 148, 0.4) !important;
+    box-shadow: 0 0 10px rgba(88, 166, 255, 0.4) !important;
   }
 
   .konami-code .btn-primary:hover,
   .konami-code .btn-secondary:hover {
-    box-shadow: 0 0 20px rgba(103, 234, 148, 0.6) !important;
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.6) !important;
   }
 
   .invert {
@@ -614,14 +609,14 @@ onMounted(() => {
     justify-content: center;
     width: 48px;
     height: 48px;
-    background: linear-gradient(135deg, rgba(103, 234, 148, 0.3), rgba(103, 234, 148, 0.1));
-    border: 2px solid rgba(103, 234, 148, 0.6);
+    background: linear-gradient(135deg, rgba(88, 166, 255, 0.3), rgba(88, 166, 255, 0.1));
+    border: 2px solid rgba(88, 166, 255, 0.6);
     border-radius: 8px;
-    color: rgb(103, 234, 148);
+    color: rgb(88, 166, 255);
     font-weight: bold;
     font-size: 20px;
-    box-shadow: 0 0 20px rgba(103, 234, 148, 0.4), inset 0 0 10px rgba(103, 234, 148, 0.1);
-    text-shadow: 0 0 10px rgba(103, 234, 148, 0.6);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.4), inset 0 0 10px rgba(88, 166, 255, 0.1);
+    text-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
   }
 
   .key-display.key-failed {

@@ -41,7 +41,11 @@ These guidelines help keep contributions consistent in this project.
 
 ## Design Standards
 
-All UI must comply with the [Meshtastic Client Design Standards](https://raw.githubusercontent.com/meshtastic/design/refs/heads/master/standards/meshtastic_design_standards_latest.md). Fetch and review this document before making any UI changes.
+This is a **first-party CrowdSense fork**. UI must follow the CrowdSense P3 brand —
+`pulse-dashboard/DESIGN.md` and `docs/architecture/P3_UNIFIED_BRAND.md` in the
+meta-repo — which supersedes the upstream [Meshtastic Client Design Standards](https://raw.githubusercontent.com/meshtastic/design/refs/heads/master/standards/meshtastic_design_standards_latest.md)
+for anything brand-related (colour, logo, app name). Consult the upstream standards
+only for interaction patterns the P3 docs don't cover.
 
 ### Brand Colors
 
@@ -49,26 +53,33 @@ Primary/Foreground color:
 - `#2C2D3C` — available as `neutral-800` in Tailwind
 
 Secondary/Background/Accent color:
-- `#67EA94` — available as `meshtastic` / `meshtastic-300` in Tailwind
+- `#58A6FF` — **Pulse Blue** (CrowdSense P3 brand) — available as `meshtastic` / `meshtastic-300` in Tailwind
+
+> **Fork note.** This is a first-party CrowdSense fork of `meshtastic/web-flasher`.
+> The accent is Pulse Blue, not Meshtastic green. The Tailwind key is still named
+> `meshtastic-*` because renaming it would churn 66 call sites for no visual gain
+> — treat the name as legacy, the values as authoritative.
 
 ### Tailwind Color Tokens
 
 Use the project's Tailwind theme tokens (defined in `tailwind.config.js`) instead of raw hex values:
 
-#### Green / Accent Scale (`meshtastic-*`)
+#### Accent Scale (`meshtastic-*` — legacy key name, Pulse Blue values)
 
-| Token | Hex | Usage |
-|-------|-----|-------|
-| `meshtastic-50` | `#E8FCF0` | Lightest tint background |
-| `meshtastic-100` | `#D1F9E1` | Success tint background |
-| `meshtastic-200` | `#A3F3C3` | Light highlight |
-| `meshtastic-300` | `#67EA94` | **Brand accent** (DEFAULT) |
-| `meshtastic-400` | `#3DE07A` | Hover / active accent |
-| `meshtastic-500` | `#22C55E` | Darker accent |
-| `meshtastic-600` | `#1A9B4A` | Large text or UI components on light backgrounds |
-| `meshtastic-700` | `#137136` | Normal text on light backgrounds / strong dark green text |
-| `meshtastic-800` | `#0C4722` | Very dark green |
-| `meshtastic-900` | `#051D0E` | Darkest green |
+Contrast measured against white and against the dark base `#0D1117`.
+
+| Token | Hex | on white | on `#0D1117` | Usage |
+|-------|-----|----------|--------------|-------|
+| `meshtastic-50` | `#E6F0FF` | — | — | Lightest tint background |
+| `meshtastic-100` | `#CCE3FF` | — | — | Info tint background |
+| `meshtastic-200` | `#99C7FF` | — | — | Light highlight |
+| `meshtastic-300` | `#58A6FF` | 2.5:1 ✗ | 7.5:1 ✓ | **Brand accent** (DEFAULT) — dark-mode text/UI only |
+| `meshtastic-400` | `#388BFD` | 3.3:1 | 5.7:1 ✓ | Hover / active accent |
+| `meshtastic-500` | `#1F6FEB` | 4.6:1 ✓ | 4.1:1 ✓ | Darker accent, safe either theme |
+| `meshtastic-600` | `#0969DA` | 5.2:1 ✓ | 3.6:1 | Text on **light** backgrounds |
+| `meshtastic-700` | `#0550AE` | 7.6:1 ✓ | 2.5:1 ✗ | Strong text on light backgrounds |
+| `meshtastic-800` | `#033D8B` | — | — | Very dark blue |
+| `meshtastic-900` | `#0A3069` | 12.8:1 ✓ | — | Darkest blue |
 
 #### Neutral Scale (`neutral-*`)
 
@@ -103,7 +114,7 @@ Use the project's Tailwind theme tokens (defined in `tailwind.config.js`) instea
 ### CSS Custom Properties
 
 For theme-aware styling (dark/light mode), use the CSS variables defined in `assets/css/main.css`:
-- `var(--accent)` / `var(--accent-dark)` — brand green (adapts per theme: `#67EA94` dark, `#1A9B4A` light)
+- `var(--accent)` / `var(--accent-dark)` — Pulse Blue (adapts per theme: `#58A6FF` dark, `#0969DA` light)
 - `var(--text-default)` / `var(--text-muted)` — text colors (adapt per theme)
 - `var(--surface-primary)` / `var(--surface-secondary)` / `var(--surface-card)` — backgrounds
 - `var(--border-default)` / `var(--border-hover)` — borders
@@ -112,7 +123,7 @@ For theme-aware styling (dark/light mode), use the CSS variables defined in `ass
 ### Light Mode Guidelines
 
 The light theme (`[data-theme="light"]`) requires special attention:
-- **Accent green**: Use `var(--accent)` which resolves to `meshtastic-600` (`#1A9B4A`) in light mode — never use raw `meshtastic-300` (`#67EA94`) for text.
+- **Accent blue**: Use `var(--accent)`, which resolves to `meshtastic-600` (`#0969DA`, 5.2:1) in light mode — never use raw `meshtastic-300` (`#58A6FF`, 2.5:1 on white) for light-mode text.
 - **Semantic text colors**: Use the `-dark` variant tokens (`info-dark`, `warning-dark`, `error-dark`) for text on light backgrounds. The DEFAULT variants may fail WCAG AA contrast on white.
 - **Card/surface elements**: Already handled by CSS variables (`--surface-primary`, `--surface-card`), which adapt to warm cream tones in light mode.
 - **Borders**: Use `border-theme` class or `var(--border-default)` — never hardcode opacity-based borders.
@@ -120,7 +131,7 @@ The light theme (`[data-theme="light"]`) requires special attention:
 ### Accessibility (WCAG AA)
 
 All foreground/background pairings must meet WCAG AA contrast (4.5:1 minimum for normal text, 3:1 for large text/UI components):
-- **Green text on light**: Use `meshtastic-600` (`#1A9B4A`, 3.6:1 — large text only) or `meshtastic-700` (`#137136`, 6.1:1 — all text). Never use `meshtastic-300` (`#67EA94`, 1.5:1) as text.
+- **Accent text on light**: Use `meshtastic-600` (`#0969DA`, 5.2:1 — all text) or `meshtastic-700` (`#0550AE`, 7.6:1). Never use `meshtastic-300` (`#58A6FF`, 2.5:1) as text on white.
 - **Semantic text**: Use `-dark` variants for text: `info-dark` (7.7:1), `warning-dark` (6.1:1), `error-dark` (5.6:1).
 - **Body text**: `neutral-800` (`#2C2D3C`, 13.6:1) or `neutral-600` (`#555668`, 7.2:1) on white.
 - **Focus indicators**: Ensure visible focus rings on all interactive elements.

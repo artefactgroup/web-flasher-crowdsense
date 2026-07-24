@@ -96,7 +96,7 @@
      height="200"
      rx="14"
      fill="url(#bodyGrad)"
-     stroke="#67ea94"
+     stroke="#58A6FF"
      stroke-width="10"
      stroke-linecap="round"
      stroke-linejoin="round"
@@ -154,7 +154,7 @@
      height="80"
      rx="6"
      fill="url(#screenGrad)"
-     stroke="#67ea94"
+     stroke="#58A6FF"
      stroke-width="1"
      opacity="0.8"
      id="rect10"
@@ -172,7 +172,7 @@
          id="g11">
         <path
            d="m 250.908,330.267 -57.782,84.738 -12.188,-8.311 63.864,-93.657 c 1.372,-2.013 3.651,-3.218 6.087,-3.221 2.437,-0.002 4.717,1.199 6.093,3.21 l 64.012,93.51 -12.173,8.333 z"
-           fill="#67ea94"
+           fill="#58A6FF"
            id="path10" />
       </g>
       <g
@@ -180,7 +180,7 @@
          id="g12">
         <path
            d="m 87.642,581.398 67.115,-98.421 -12.119,-8.264 -67.115,98.421 z"
-           fill="#67ea94"
+           fill="#58A6FF"
            id="path11" />
       </g>
     </g>
@@ -240,14 +240,14 @@
      cy="167"
      r="14"
      fill="#1a2a1f"
-     stroke="#67ea94"
+     stroke="#58A6FF"
      stroke-width="2"
      id="circle18" />
   <circle
      cx="144.28955"
      cy="167"
      r="8"
-     fill="#67ea94"
+     fill="#58A6FF"
      filter="url(#glow)"
      id="circle19" />
   <!-- Status LED -->
@@ -255,7 +255,7 @@
      cx="170.26186"
      cy="25.547974"
      r="3"
-     fill="#67ea94"
+     fill="#58A6FF"
      opacity="0.8"
      filter="url(#glow)"
      id="circle20" />

@@ -1,9 +1,9 @@
 {
-  "title": "Flasher Web Meshtastic",
+  "title": "Flasher Web CrowdSense",
   "header": "Flasher",
   "description": "Una herramienta web para flashear firmware en ESP32",
   "browser_warning": "Tu navegador no es compatible con la API WebSerial. Por favor, cambia a un navegador compatible, como Chrome o Edge, para una funcionalidad completa.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Idioma",
   "actions": {
     "connect": "Conectar",
@@ -29,7 +29,7 @@
     "select_device": "Seleccionar dispositivo objetivo",
     "all_devices": "Todos los dispositivos",
     "instructions": "Conecta tu dispositivo mediante USB. Asegúrate de que el cable no sea solo de alimentación.",
-    "subheading": "Si tu dispositivo ya tiene Meshtastic instalado, puedes detectarlo automáticamente:",
+    "subheading": "Si tu dispositivo ya tiene firmware instalado, puedes detectarlo automáticamente:",
     "auto_detect": "Detección automática",
     "supported_devices": "Dispositivos compatibles",
     "diy_devices": "Dispositivos DIY"
@@ -94,7 +94,7 @@
       "download_uf2": "Descargar UF2"
     },
     "erase_uf2": {
-      "warning": "Después de borrar la memoria, esta opción no estará disponible hasta que se flashee nuevamente un firmware de Meshtastic en el dispositivo.",
+      "warning": "Después de borrar la memoria, esta opción no estará disponible hasta que se flashee nuevamente un firmware en el dispositivo.",
       "dfu_warning": "Esta operación borrará completamente tu dispositivo.",
       "wait_for_drive": "Espera a que la unidad desaparezca, luego abre un monitor serie para completar el proceso de borrado.",
       "close_instructions": "Cierra esta ventana emergente para seleccionar una versión de firmware e iniciar el flasheo."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Abrir monitor serial",
-    "meshtastic_docs": "Documentación de Meshtastic",
+    "meshtastic_docs": "Documentación",
     "contribute": "Contribuir en GitHub"
   },
   "serial": {

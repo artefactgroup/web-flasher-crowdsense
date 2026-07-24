@@ -87,11 +87,7 @@
                 class="sr-only peer"
               >
               <div class="w-11 h-6 bg-gray-400 dark:bg-gray-600 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-green-800 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-green-600" />
-              <img
-                src="/img/Meshtastic-UI-Long.svg"
-                class="h-5 ms-3"
-                alt="Meshtastic UI"
-              >
+              <span class="ms-3 text-sm font-medium text-theme">Web UI</span>
             </label>
             
             <label
@@ -412,17 +408,17 @@ const updateEsp32 = async () => {
   justify-content: center;
   padding: 0.75rem;
   border-radius: 1rem;
-  background: linear-gradient(145deg, rgba(103, 234, 148, 0.08), rgba(103, 234, 148, 0.02));
-  border: 1px solid rgba(103, 234, 148, 0.2);
+  background: linear-gradient(145deg, rgba(88, 166, 255, 0.08), rgba(88, 166, 255, 0.02));
+  border: 1px solid rgba(88, 166, 255, 0.2);
   animation: container-glow 2s ease-in-out infinite;
 }
 
 @keyframes container-glow {
   0%, 100% { 
-    box-shadow: 0 0 20px rgba(103, 234, 148, 0.15);
+    box-shadow: 0 0 20px rgba(88, 166, 255, 0.15);
   }
   50% { 
-    box-shadow: 0 0 35px rgba(103, 234, 148, 0.25);
+    box-shadow: 0 0 35px rgba(88, 166, 255, 0.25);
   }
 }
 
@@ -431,20 +427,20 @@ const updateEsp32 = async () => {
   height: 80px;
   object-fit: contain;
   border-radius: 1rem;
-  border: 1px solid rgba(103, 234, 148, 0.3);
+  border: 1px solid rgba(88, 166, 255, 0.3);
   padding: 0.5rem;
-  background: rgba(103, 234, 148, 0.05);
+  background: rgba(88, 166, 255, 0.05);
 }
 
 .chirpy-success {
-  filter: drop-shadow(0 0 15px rgba(103, 234, 148, 0.6));
+  filter: drop-shadow(0 0 15px rgba(88, 166, 255, 0.6));
 }
 
 .chirpy-status-text {
   margin-top: 0.75rem;
   font-size: 0.875rem;
   font-weight: 500;
-  color: #67EA94;
+  color: #58A6FF;
   text-align: center;
   animation: text-pulse 1.5s ease-in-out infinite;
 }

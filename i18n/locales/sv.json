@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher",
+  "title": "CrowdSense Flasher",
   "header": "Programmerare",
   "description": "Ett webbaserat verktyg för programmering av ESP32-firmware",
   "browser_warning": "Din webbläsare stöder inte WebSerial API. Vänligen växla till en kompatibel webbläsare, såsom Chrome eller Edge, för full funktionalitet.",
-  "header_title": "PROGRAMMERARE",
+  "header_title": "CrowdSense PROGRAMMERARE",
   "language": "Språk",
   "actions": {
     "connect": "Anslut",
@@ -29,7 +29,7 @@
     "select_device": "Välj målenhet",
     "all_devices": "Alla enheter",
     "instructions": "Koppla in enheten via USB. Se till att kabeln kan överföra data.",
-    "subheading": "Om din anslutna enhet redan har Meshtastic installerat kan du automatiskt identifiera den:",
+    "subheading": "Om din anslutna enhet redan har firmware installerat kan du automatiskt identifiera den:",
     "auto_detect": "Automatisk identifiering",
     "supported_devices": "Enheter som stöds",
     "diy_devices": "Gör-det-själv-enheter"
@@ -94,7 +94,7 @@
       "download_uf2": "Ladda ner UF2"
     },
     "erase_uf2": {
-      "warning": "Efter radering av flashminnet, kommer denna åtgärd inte att vara tillgänglig igen förrän nya Meshtastic-programvara är installerad på enheten.",
+      "warning": "Efter radering av flashminnet, kommer denna åtgärd inte att vara tillgänglig igen förrän nya programvara är installerad på enheten.",
       "dfu_warning": "Denna åtgärd kommer att radera allt på din enhet.",
       "wait_for_drive": "Vänta på att lagringsenheten försvinner, öppna seda en seriell konsol för att slutföra raderingsprocessen.",
       "close_instructions": "Stäng denna pop-up för att välja en firmware-version och påbörja installationen."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Öppna seriell konsol",
-    "meshtastic_docs": "Meshtastic Dokumentation",
+    "meshtastic_docs": "Dokumentation",
     "contribute": "Bidra på GitHub"
   },
   "serial": {

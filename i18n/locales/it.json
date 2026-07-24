@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher",
+  "title": "CrowdSense Flasher",
   "header": "Flasher",
   "description": "Uno strumento web-based per il flashing del firmware ESP32",
   "browser_warning": "Il tuo browser non supporta l'API WebSerial. Passa a un browser compatibile, come Chrome o Edge, per avere una funzionalità completa.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Lingua",
   "actions": {
     "connect": "Connetti",
@@ -29,7 +29,7 @@
     "select_device": "Seleziona Dispositivo Di Destinazione",
     "all_devices": "Tutti i dispositivi",
     "instructions": "Collega il dispositivo tramite USB. Assicurati che il cavo supporti la trasmissione dati e non sia solo per la ricarica.",
-    "subheading": "Se il dispositivo connesso ha già installato Meshtastic, è possibile rilevarlo automaticamente:",
+    "subheading": "Se il dispositivo connesso ha già installato un firmware, è possibile rilevarlo automaticamente:",
     "auto_detect": "Rileva automaticamente",
     "supported_devices": "Dispositivi supportati",
     "diy_devices": "Dispositivi DIY"
@@ -94,7 +94,7 @@
       "download_uf2": "Scarica UF2"
     },
     "erase_uf2": {
-      "warning": "\"Dopo aver cancellato la memoria, questa operazione non sarà più disponibile finché non verrà installato un nuovo firmware Meshtastic sul dispositivo.",
+      "warning": "\"Dopo aver cancellato la memoria, questa operazione non sarà più disponibile finché non verrà installato un nuovo firmware sul dispositivo.",
       "dfu_warning": "Questa operazione cancellerà completamente il dispositivo.",
       "wait_for_drive": "Attendere che l'unità scompaia, quindi aprire un monitor seriale per completare il processo di cancellazione.",
       "close_instructions": "Chiudere questo popup per selezionare una versione del firmware e iniziare a flashare."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Apri Monitor Seriale",
-    "meshtastic_docs": "Meshtastic Docs",
+    "meshtastic_docs": "Docs",
     "contribute": "Contribuisci su GitHub"
   },
   "serial": {

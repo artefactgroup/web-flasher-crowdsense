@@ -1,9 +1,9 @@
 {
-  "title": "Carregador WEB MESTASTIC",
+  "title": "Carregador Web CrowdSense",
   "header": "Flasher",
-  "description": "Update your Meshtastic device with official firmware, straight from your browser",
+  "description": "Update your device with official firmware, straight from your browser",
   "browser_warning": "Your browser does not support the WebSerial API. Please switch to a compatible browser, such as Chrome or Edge, for full functionality.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Language",
   "actions": {
     "connect": "Connect",
@@ -29,7 +29,7 @@
     "select_device": "Select Target Device",
     "all_devices": "All Devices",
     "instructions": "Plug in your device via USB. Please ensure the cable is not a power-only one.",
-    "subheading": "If your connected device already has Meshtastic installed, you can automatically detect it:",
+    "subheading": "If your connected device already has firmware installed, you can automatically detect it:",
     "auto_detect": "Auto-detect",
     "supported_devices": "Supported Devices",
     "diy_devices": "DIY Devices"
@@ -94,7 +94,7 @@
       "download_uf2": "Download UF2"
     },
     "erase_uf2": {
-      "warning": "After erasing flash, this operation will not be available again until new Meshtastic firmware is flashed on the device.",
+      "warning": "After erasing flash, this operation will not be available again until new firmware is flashed on the device.",
       "dfu_warning": "This operation will erase your device completely.",
       "wait_for_drive": "Wait for the drive to disappear, then open a serial monitor to complete the erase process.",
       "close_instructions": "Close this popup to select a firmware version and begin flashing."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Open Serial Monitor",
-    "meshtastic_docs": "Meshtastic Docs",
+    "meshtastic_docs": "Docs",
     "contribute": "Contribute on GitHub"
   },
   "serial": {

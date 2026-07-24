@@ -13,18 +13,20 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Pulse Blue ramp (P3 brand). Only DEFAULT is consumed today; the rest
+        // exists so a future `bg-meshtastic-600` can't reintroduce the old green.
         meshtastic: {
           DEFAULT: '#58A6FF',
-          50: '#E8FCF0',
-          100: '#D1F9E1',
-          200: '#A3F3C3',
+          50: '#E6F0FF',
+          100: '#CCE3FF',
+          200: '#99C7FF',
           300: '#58A6FF',
-          400: '#3DE07A',
-          500: '#3B82F6',
-          600: '#1A9B4A',
-          700: '#137136',
-          800: '#0C4722',
-          900: '#051D0E',
+          400: '#388BFD',
+          500: '#1F6FEB',
+          600: '#0969DA',
+          700: '#0550AE',
+          800: '#033D8B',
+          900: '#0A3069',
         },
         neutral: {
           50: '#F5F6FA',
@@ -73,8 +75,8 @@ export default {
           '100%': { opacity: '1', transform: 'translateY(0)' },
         },
         glow: {
-          '0%': { boxShadow: '0 0 5px rgba(103, 234, 148, 0.2), 0 0 20px rgba(103, 234, 148, 0.1)' },
-          '100%': { boxShadow: '0 0 10px rgba(103, 234, 148, 0.4), 0 0 40px rgba(103, 234, 148, 0.2)' },
+          '0%': { boxShadow: '0 0 5px rgba(88, 166, 255, 0.2), 0 0 20px rgba(88, 166, 255, 0.1)' },
+          '100%': { boxShadow: '0 0 10px rgba(88, 166, 255, 0.4), 0 0 40px rgba(88, 166, 255, 0.2)' },
         },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
@@ -82,8 +84,8 @@ export default {
         },
       },
       boxShadow: {
-        'glow': '0 0 20px rgba(103, 234, 148, 0.3)',
-        'glow-lg': '0 0 40px rgba(103, 234, 148, 0.4)',
+        'glow': '0 0 20px rgba(88, 166, 255, 0.3)',
+        'glow-lg': '0 0 40px rgba(88, 166, 255, 0.4)',
         'card': '0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2)',
         'card-hover': '0 20px 40px -15px rgba(0, 0, 0, 0.5)',
       },

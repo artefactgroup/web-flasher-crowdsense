@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher ",
+  "title": "CrowdSense Flasher",
   "header": "Flasher",
   "description": "Web-pohjainen työkalu ESP32 laiteohjelmiston ohjelmoimiseen",
   "browser_warning": "Selaimesi ei tue WebSerial (API) käyttöliittymää. Vaihda yhteensopivaan selaimeen, kuten Chromeen tai Edgeen.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Kieli",
   "actions": {
     "connect": "Yhdistä",
@@ -29,7 +29,7 @@
     "select_device": "Valitse kohdelaite",
     "all_devices": "Kaikki laitteet",
     "instructions": "Kytke laite UBS-kaapelilla. Varmista, ettei kaapeli ole tarkoitettu ainoastaan laitteen lataamista varten.",
-    "subheading": "Jos kytkettyyn laitteeseen on jo Meshtastic asennettu, voit tunnistaa sen automaattisesti:",
+    "subheading": "Jos kytkettyyn laitteeseen on jo laiteohjelmisto asennettu, voit tunnistaa sen automaattisesti:",
     "auto_detect": "Tunnista automaattisesti",
     "supported_devices": "Tuetut laitteet",
     "diy_devices": "DIY-laitteet"
@@ -94,7 +94,7 @@
       "download_uf2": "Lataa UF2"
     },
     "erase_uf2": {
-      "warning": "Laitteen tyhjentämisen jälkeen Meshtastic ohjelmisto ei ole käytettävissä, ennen kuin siihen on ohjelmoitu uusi laiteohjelmisto.",
+      "warning": "Laitteen tyhjentämisen jälkeen ohjelmisto ei ole käytettävissä, ennen kuin siihen on ohjelmoitu uusi laiteohjelmisto.",
       "dfu_warning": "Tämä toiminto tyhjentää laitteesi kokonaan.",
       "wait_for_drive": "Odota, että asema ei enää näy ja avaa sen jälkeen sarjavalvontaohjelma tyhjennyksen loppuun saattamiseksi.",
       "close_instructions": "Sulje tämä ponnahdusikkuna valitaksesi laiteohjelmistoversion ja aloittaaksesi ohjelmoinnin."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Avaa sarjaportin valvonta",
-    "meshtastic_docs": "Meshtastic dokumentit",
+    "meshtastic_docs": "Dokumentit",
     "contribute": "Osallistu GitHubissa"
   },
   "serial": {

@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic 웹 플래셔",
+  "title": "CrowdSense 웹 플래셔",
   "header": "플래셔",
   "description": "ESP32 펌웨어 플래싱을 위한 웹 기반 도구",
   "browser_warning": "귀하의 브라우저는 WebSerial API를 지원하지 않습니다. 완전한 기능을 사용하려면 Chrome 또는 Edge와 같은 호환되는 브라우저로 전환해 주시기 바랍니다.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "언어",
   "actions": {
     "connect": "연결",
@@ -29,7 +29,7 @@
     "select_device": "장치 선택",
     "all_devices": "모든 장치",
     "instructions": "USB를 통해 장치를 연결하세요. 케이블이 전원 전용 케이블이 아닌지 확인해 주세요.",
-    "subheading": "연결된 장치에 이미 Meshtastic이 설치되어 있다면, 이를 자동으로 감지할 수 있습니다:",
+    "subheading": "연결된 장치에 이미 펌웨어가 설치되어 있다면, 이를 자동으로 감지할 수 있습니다:",
     "auto_detect": "자동 감지",
     "supported_devices": "지원되는 장치",
     "diy_devices": "DIY 장치"
@@ -94,7 +94,7 @@
       "download_uf2": "UF2 펌웨어 다운로드"
     },
     "erase_uf2": {
-      "warning": "기존 펌웨어를 지운 후에는 이 작업이 다시 사용할 수 없게 되며, 장치에 새로운 Meshtastic 펌웨어를 플래시할 때까지 해당 기능이 복원되지 않습니다.",
+      "warning": "기존 펌웨어를 지운 후에는 이 작업이 다시 사용할 수 없게 되며, 장치에 새로운 펌웨어를 플래시할 때까지 해당 기능이 복원되지 않습니다.",
       "dfu_warning": "이 작업은 기기를 완전히 초기화합니다.",
       "wait_for_drive": "드라이브가 사라질 때까지 기다린 후 시리얼 모니터를 열어 삭제 과정을 완료합니다.",
       "close_instructions": "이 팝업을 닫고 펌웨어 버전을 선택한 후 플래싱을 시작하세요."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "시리얼 모니터 열기",
-    "meshtastic_docs": "Meshtastic 문서",
+    "meshtastic_docs": "문서",
     "contribute": "GitHub에 기여"
   },
   "serial": {

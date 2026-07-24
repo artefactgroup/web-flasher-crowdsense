@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher",
+  "title": "CrowdSense Flasher",
   "header": "Flasher",
-  "description": "Update your Meshtastic device with official firmware, straight from your browser",
+  "description": "Update your device with official firmware, straight from your browser",
   "browser_warning": "お使いのブラウザは WebSerial APIをサポートしていません。完全な機能のためにChromeや Edge などの互換性のあるブラウザに切り替えてください。",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "言語",
   "actions": {
     "connect": "接続",
@@ -29,7 +29,7 @@
     "select_device": "ターゲット デバイスを選択",
     "all_devices": "全てのデバイス",
     "instructions": "USB 経由でデバイスを接続します。ケーブルが電源専用ではないことを確認してください。",
-    "subheading": "接続されているデバイスにすでに Meshtastic がインストールされている場合は、自動的に検出できます：",
+    "subheading": "接続されているデバイスにすでにファームウェアがインストールされている場合は、自動的に検出できます：",
     "auto_detect": "自動検出",
     "supported_devices": "対応しているデバイス",
     "diy_devices": "DIY Devices"
@@ -94,7 +94,7 @@
       "download_uf2": "UF2 をダウンロード"
     },
     "erase_uf2": {
-      "warning": "フラッシュメモリを消去した後、新しいMeshtasticファームウェアがデバイス上に書き込み完了するまで、この操作は利用できません。",
+      "warning": "フラッシュメモリを消去した後、新しいファームウェアがデバイス上に書き込み完了するまで、この操作は利用できません。",
       "dfu_warning": "この操作を行うとデバイスが完全に消去されます。",
       "wait_for_drive": "ドライブが消えるのを待ち、シリアルモニタを開いて消去プロセスを完了します。",
       "close_instructions": "このポップアップを閉じてファームウェアバージョンを選択し、書き込みを開始します。"
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "シリアルモニターを開く",
-    "meshtastic_docs": "Meshtastic ドキュメント",
+    "meshtastic_docs": "ドキュメント",
     "contribute": "GitHub で貢献"
   },
   "serial": {

@@ -1,9 +1,9 @@
 {
-  "title": "Flasher Web Meshtastic",
+  "title": "Flasher Web CrowdSense",
   "header": "Flasher",
   "description": "Un outil web pour flasher le micrologiciel des ESP32",
   "browser_warning": "Votre navigateur ne prend pas en charge l'API WebSerial . Veuillez basculer vers un navigateur compatible, tel que Chrome ou Edge, pour une fonctionnalité complète.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Langue",
   "actions": {
     "connect": "Connecter",
@@ -29,7 +29,7 @@
     "select_device": "Sélectionnez le périphérique cible",
     "all_devices": "Tous les périphériques",
     "instructions": "Branchez votre appareil via USB. Veuillez vous assurer que le câble n'est pas juste un câble d'alimentation.",
-    "subheading": "Si Meshtastic est déjà installé sur votre appareil connecté, vous pouvez le détecter automatiquement :",
+    "subheading": "Si un micrologiciel est déjà installé sur votre appareil connecté, vous pouvez le détecter automatiquement :",
     "auto_detect": "Détection automatique",
     "supported_devices": "Périphériques supportés",
     "diy_devices": "Dispositifs DIY"
@@ -94,7 +94,7 @@
       "download_uf2": "Télécharger UF2"
     },
     "erase_uf2": {
-      "warning": "Après l’effacement de la mémoire flash, cette opération ne sera plus disponible tant qu’un nouveau micrologiciel Meshtastic n’aura pas été installé sur l’appareil.",
+      "warning": "Après l’effacement de la mémoire flash, cette opération ne sera plus disponible tant qu’un nouveau micrologiciel n’aura pas été installé sur l’appareil.",
       "dfu_warning": "Cette opération effacera complètement votre appareil.",
       "wait_for_drive": "Attendez que le lecteur disparaisse, puis ouvrez un moniteur série pour terminer le processus d'effacement.",
       "close_instructions": "Fermez cette fenêtre pour sélectionner une version du micrologiciel et commencer le flash."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Ouvrir le moniteur série",
-    "meshtastic_docs": "Documentation Meshtastic",
+    "meshtastic_docs": "Documentation",
     "contribute": "Contribuer sur GitHub"
   },
   "serial": {

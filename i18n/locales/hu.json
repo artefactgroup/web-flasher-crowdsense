@@ -1,9 +1,9 @@
 {
-  "title": "Meshtastic Web Flasher",
+  "title": "CrowdSense Flasher",
   "header": "Flasher",
   "description": "Webalapú eszköz ESP32 firmware írásához (flasheléséhez)",
   "browser_warning": "A böngésződ nem támogatja a WebSerial API-t. A teljes funkcionalitás érdekében válts kompatibilis böngészőre, például Chrome-ra vagy Edge-re.",
-  "header_title": "Meshtastic Web Flasher",
+  "header_title": "CrowdSense Flasher",
   "language": "Nyelv",
   "actions": {
     "connect": "Csatlakozás",
@@ -29,7 +29,7 @@
     "select_device": "Cél-eszköz kiválasztása",
     "all_devices": "Összes eszköz",
     "instructions": "Csatlakoztasd az eszközt USB-n keresztül. Győződj meg róla, hogy az adatátvitelre is alkalmas (nem csak töltő) kábelt használsz.",
-    "subheading": "Ha az eszközön már fut a Meshtastic, automatikusan felismerhető:",
+    "subheading": "Ha az eszközön már fut egy firmware, automatikusan felismerhető:",
     "auto_detect": "Automatikus felismerés",
     "supported_devices": "Támogatott eszközök",
     "diy_devices": "DIY eszközök"
@@ -94,7 +94,7 @@
       "download_uf2": "UF2 letöltése"
     },
     "erase_uf2": {
-      "warning": "A flash törlése után ez a művelet nem lesz elérhető, amíg új Meshtastic firmware nincs felírva az eszközre.",
+      "warning": "A flash törlése után ez a művelet nem lesz elérhető, amíg új firmware nincs felírva az eszközre.",
       "dfu_warning": "Ez a művelet teljesen törli az eszközt.",
       "wait_for_drive": "Várd meg, amíg a meghajtó eltűnik, majd nyiss meg egy soros konzolt a törlési folyamat befejezéséhez.",
       "close_instructions": "Zárd be ezt az ablakot, hogy kiválaszd a firmware-verziót és elkezdd a flashelést."
@@ -102,7 +102,7 @@
   },
   "buttons": {
     "serial_monitor": "Soros konzol megnyitása",
-    "meshtastic_docs": "Meshtastic dokumentáció",
+    "meshtastic_docs": "Dokumentáció",
     "contribute": "Közreműködés a GitHubon"
   },
   "serial": {

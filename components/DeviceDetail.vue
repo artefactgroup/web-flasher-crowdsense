@@ -26,12 +26,12 @@
       >
         {{ tag }}
       </span>
-      <img
+      <span
         v-if="props.device.hasMui"
-        src="/img/Meshtastic-UI-Short.svg"
-        class="h-6 m-1 pb-1"
-        alt="Meshtastic UI"
+        class="text-xs font-medium px-2.5 py-0.5 h-6 rounded bg-indigo-600 dark:bg-indigo-500 text-white dark:text-gray-100 me-1 inline-flex items-center"
       >
+        Web UI
+      </span>
     </div>
     <div
       v-if="props.device.images && isSupporterDevice(props.device)"

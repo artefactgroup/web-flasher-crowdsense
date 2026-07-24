@@ -7,16 +7,9 @@
     >
       <div class="logo-container">
         <img
-          v-if="themeStore.isDark"
-          src="@/assets/img/logo.svg"
+          src="/crowdsense-mark.svg"
           class="logo-icon"
-          alt="Meshtastic Logo"
-        >
-        <img
-          v-else
-          src="@/assets/img/logo-dark.svg"
-          class="logo-icon"
-          alt="Meshtastic Logo"
+          alt="CrowdSense"
         >
         <span class="logo-separator">×</span>
         <img
@@ -38,16 +31,9 @@
       <div class="logo-container">
         <div class="logo-glow">
           <img
-            v-if="themeStore.isDark"
-            src="@/assets/img/logo.svg"
+            src="/crowdsense-mark.svg"
             class="logo-icon"
-            alt="Meshtastic Logo"
-          >
-          <img
-            v-else
-            src="@/assets/img/logo-dark.svg"
-            class="logo-icon"
-            alt="Meshtastic Logo"
+            alt="CrowdSense"
           >
         </div>
         <span class="logo-separator">×</span>
@@ -89,16 +75,9 @@
       <div class="logo-container">
         <div class="logo-glow">
           <img
-            v-if="themeStore.isDark"
-            src="@/assets/img/logo.svg"
+            src="/crowdsense-mark.svg"
             class="logo-icon"
-            alt="Meshtastic Logo"
-          >
-          <img
-            v-else
-            src="@/assets/img/logo-dark.svg"
-            class="logo-icon"
-            alt="Meshtastic Logo"
+            alt="CrowdSense"
           >
         </div>
       </div>
@@ -112,10 +91,8 @@
 
 <script lang="ts" setup>
 import { vendorCobrandingTag } from '~/types/resources'
-import { useThemeStore } from '~/stores/themeStore'
 import { useEventMode } from '~/composables/useEventMode'
 
-const themeStore = useThemeStore()
 const { eventMode } = useEventMode()
 </script>
 
